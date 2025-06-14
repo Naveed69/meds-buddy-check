@@ -4,6 +4,7 @@
   /* justify-content: center; */
   align-items: center;
   padding: 2%;
+  background-color: aliceblue;
 }
 .heart-onboard {
   width: 40px;
@@ -50,6 +51,9 @@
   border: 2px solid rgb(228, 228, 228);
   min-width: 30vw;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: white;
 }
 
 .patient-onboard:hover {
@@ -66,6 +70,7 @@
 .caretaker-user {
   padding: 20px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .pateint-user {
@@ -100,10 +105,96 @@
 
 .tacker-onboard {
   color: rgb(126, 122, 122);
-  max-width: 90%;
   text-align: center;
 }
 
+.patient-ul,
+.caretaker-ul {
+  text-align: left;
+  color: rgb(134, 132, 132);
+}
+
+.patient-ul li::marker {
+  color: rgb(101, 101, 233);
+  font-size: 22px;
+}
+.caretaker-ul li::marker {
+  color: rgb(128, 248, 128);
+  font-size: 22px;
+}
+
+/* bottons */
+
+.patient-bnt-onboard,
+.caretaker-bnt-onboard {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.patient-bnt-onboard {
+  background-color: rgb(62, 64, 197);
+}
+
+.caretaker-bnt-onboard {
+  background-color: #1e972f;
+}
+
+.navbar {
+  padding: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+/* logo */
+
+.logo {
+  padding: 10px;
+  width: 20px;
+  height: 25px;
+  background: linear-gradient(120deg, #036e11, #16bb00);
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.logo-div {
+  display: flex;
+}
+
+.logo-div .p {
+  color: rgb(128, 121, 121);
+  position: relative;
+  top: -35px;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  top: -15px;
+}
+
+/* toogel botton */
+.toggel-btn {
+  padding: 10px;
+  border: 1px solid rgb(223, 219, 219);
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+span {
+  width: 200px;
+}
 /* media query for mobile devices */
 @media (width< 768px) {
   .moto-onboard {
