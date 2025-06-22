@@ -34,11 +34,11 @@ const PatientDashboard = () => {
   };
 
   return (
-    <div>
+    <div className="container-patient">
       <div>
         <h2>
-          Good{" "}
-          {new Date().getHours() < 12
+          Good
+          {" " + new Date().getHours() < 12
             ? "Morning"
             : new Date().getHours() < 18
             ? "Afternoon"
@@ -48,7 +48,7 @@ const PatientDashboard = () => {
         <p>Ready to stay on track with your medication?</p>
         <div>
           <div>Day Streak: {getStreakCount()}</div>
-          <div>Today's Status: {takenDates.has(todayStr) ? "✓" : "○"}</div>
+          <div>Today's Status: {takenDates.has(todayStr) ? "✓" : "o"}</div>
           <div>Monthly Rate: {Math.round((takenDates.size / 30) * 100)}%</div>
         </div>
       </div>
