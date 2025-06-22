@@ -1,4 +1,6 @@
 import { useState, useRef } from "react";
+import "./MedicationTracker.css";
+import { Clock, Check, Image, Camera } from "lucide-react";
 
 const MedicationTracker = ({ date, isTaken, onMarkTaken, isToday }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -31,40 +33,78 @@ const MedicationTracker = ({ date, isTaken, onMarkTaken, isToday }) => {
 
   if (isTaken) {
     return (
-      <div>
-        <div>
+      <div className="medication-container">
+        <div className="medication-completed">
+          <Check className="completed-medication-check" />
           <h3>Medication Completed!</h3>
           <p>
             Great job! You've taken your medication for{" "}
             {new Date(date).toLocaleDateString()}.
           </p>
         </div>
-        <div>
-          <h4>{dailyMedication.name}</h4>
-          <p>{dailyMedication.description}</p>
-          <span>{dailyMedication.time}</span>
+
+        <div className="medication-container-completed">
+          <div className="count-name">
+            <div className="count-medication-completed">
+              <Check />
+            </div>
+            <span>
+              <p className="medication-name">{dailyMedication.name}</p>
+              <p className="medication-description">
+                {dailyMedication.description}
+              </p>
+            </span>
+          </div>
+          <span className="medication-time">
+            <Clock
+              width={14}
+              height={14}
+              style={{ marginRight: "5px", marginLeft: "5px" }}
+            />
+            {dailyMedication.time}
+          </span>
         </div>
       </div>
     );
   }
 
   return (
-    <div>
-      <div>
-        <h4>{dailyMedication.name}</h4>
-        <p>{dailyMedication.description}</p>
-        <span>{dailyMedication.time}</span>
+    <div className="medication-container">
+      <div className="medication-container-incompleted">
+        <div className="count-name">
+          <div className="count-medication">1</div>
+          <span>
+            <p className="medication-name">{dailyMedication.name}</p>
+            <p className="medication-description">
+              {dailyMedication.description}
+            </p>
+          </span>
+        </div>
+        <span className="medication-time">
+          <Clock
+            width={14}
+            height={14}
+            style={{ marginRight: "5px", marginLeft: "5px" }}
+          />
+          {dailyMedication.time}
+        </span>
       </div>
 
-      <div>
+      <div className="medication-image-container">
+        <Image className="image" />
         <h3>Add Proof Photo (Optional)</h3>
         <input
           type="file"
           accept="image/*"
           onChange={handleImageSelect}
           ref={fileInputRef}
+          style={{ display: "none" }}
         />
-        <button onClick={() => fileInputRef.current?.click()}>
+        <button
+          className="take-photo"
+          onClick={() => fileInputRef.current?.click()}
+        >
+          <Camera style={{ marginRight: "10px" }} />
           {selectedImage ? "Change Photo" : "Take Photo"}
         </button>
 
@@ -80,7 +120,12 @@ const MedicationTracker = ({ date, isTaken, onMarkTaken, isToday }) => {
         )}
       </div>
 
-      <button onClick={handleMarkTaken} disabled={!isToday}>
+      <button
+        className="masrkastaken-medication"
+        onClick={handleMarkTaken}
+        disabled={!isToday}
+      >
+        <Check style={{ width: "16px", height: "16px", marginRight: "10px" }} />
         {isToday ? "Mark as Taken" : "Cannot mark future dates"}
       </button>
 

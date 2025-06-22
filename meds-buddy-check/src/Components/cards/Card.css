@@ -1,0 +1,25 @@
+.card-container {
+    padding:10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  height: 60px;
+  width: 28%;
+}
+
+.card-value {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.card-text {
+  position: relative;
+  top: -20px;
+}
+
+@media (width < 768px) {
+  .card-container {
+    width: 90%;
+  }
+}

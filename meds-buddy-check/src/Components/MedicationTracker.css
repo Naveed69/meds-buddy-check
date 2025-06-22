@@ -1,0 +1,119 @@
+.medication-container-incompleted {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.medication-completed {
+  margin-top: 20px;
+  border: 1px solid rgb(154, 236, 154);
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: rgb(234, 252, 234);
+}
+
+.medication-container-completed {
+  border: 1px solid rgb(154, 236, 154);
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+  justify-content: space-between;
+  color: rgb(12, 107, 12);
+  background-color: rgb(234, 252, 234);
+}
+
+.count-medication-completed {
+  background-color: rgb(75, 161, 75);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.completed-medication-check {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(75, 161, 75);
+  color: white;
+  border-radius: 50%;
+}
+
+.count-medication {
+  background-color: rgb(211, 206, 255);
+  color: rgb(75, 75, 197);
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.count-name {
+  display: flex;
+}
+
+.medication-name {
+  margin: 0px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.medication-description {
+  margin: 0px;
+  font-size: 14px;
+  color: rgb(153, 151, 151);
+  margin-left: 10px;
+}
+
+.medication-time {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  width: 80px;
+  height: 20px;
+  display: flex;
+  position: relative;
+}
+
+.medication-image-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px dashed rgb(223, 215, 215);
+  padding: 20px;
+  text-align: center;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  color: rgb(104, 100, 100);
+}
+
+.take-photo {
+  padding: 10px;
+  width: 130px;
+  background-color: white;
+  border: 1px solid rgb(201, 197, 197);
+  border-radius: 5px;
+}
+
+.masrkastaken-medication {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(75, 161, 75);
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (width<768px) {
+}
