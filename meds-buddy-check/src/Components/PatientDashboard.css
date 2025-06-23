@@ -1,6 +1,7 @@
 .container-patient {
   margin: 0 auto;
   padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 5%;
   padding-right: 5%;
   font-family: "Segoe UI", sans-serif;
@@ -47,7 +48,10 @@
 
 .patient-card {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px; /* space between cards */
+  justify-content: center;
+  width: 100%;
 }
 
 .medication-container-patient {
@@ -145,12 +149,6 @@
   border: none;
 }
 
-.react-calendar {
-  font-family: "Segoe UI", sans-serif;
-  padding: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-}
-
 /* Responsive */
 @media (width < 768px) {
   .patient-card {
@@ -169,18 +167,5 @@
 
   .calender-container-patient {
     width: 80%;
-  }
-
-  /* --------- */
-  .stats-box {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .stat:not(:last-child) {
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
   }
 }

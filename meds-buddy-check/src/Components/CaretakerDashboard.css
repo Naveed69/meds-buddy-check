@@ -1,4 +1,47 @@
-.container-caretaker {
+.caretaker-container {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
   background-color: rgb(236, 236, 236);
-  height: 500px;
+}
+
+.dashboard-header-caretaker {
+  background: linear-gradient(120deg, #2cbb7f, #4483e0);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.user-caretaker {
+  padding: 15px;
+  background-color: #36cf8f;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+  margin: 10px;
+}
+
+.dashboard-header-caretaker div {
+  display: flex;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.dashboard-header-caretaker span {
+  min-width: 50%;
+}
+
+.dashboard-header-caretaker h2 {
+  margin: 0px;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.dashboard-header-caretaker p {
+  font-size: 16px;
+  margin: 0px;
 }
