@@ -7,15 +7,12 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
-import PatientDashboard from "./PatientDashboard";
-import { OnBording } from "./Onboarding";
 import Notifications from "./routes/Notifications";
 import Calenderview from "./routes/CalenderView";
 import RecentActivity from "./routes/RecentActivity";
 import Overview from "./routes/Overview";
 
 const CaretakerDashboard = () => {
-  //mock data
   const patientName = "Eleanor Thompson";
   const adherenceRate = 85;
   const currentStreak = 5;

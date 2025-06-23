@@ -110,6 +110,17 @@ const PatientDashboard = () => {
               return null;
             }}
           />
+          <ul className="legend-list">
+            <li>
+              <span className="dot green"></span>Medication taken
+            </li>
+            <li>
+              <span className="dot red"></span>Missed medication
+            </li>
+            <li>
+              <span className="dot blue"></span>Today
+            </li>
+          </ul>
         </div>
       </div>
     </div>
