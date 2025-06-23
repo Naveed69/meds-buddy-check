@@ -45,3 +45,33 @@
   font-size: 16px;
   margin: 0px;
 }
+
+.routes-navbar-caretaker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 18px;
+  border-radius: 8px;
+  margin: 10px;
+  flex-wrap: wrap;
+  background-color: rgb(226, 219, 219);
+}
+
+.routes-navbar-caretaker a {
+  text-decoration: none;
+  color: #888686;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  font-size: 14px;
+}
+
+.routes-navbar-caretaker a:hover {
+  color: #007bff;
+}
+
+.active-link {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  color: black !important;
+}

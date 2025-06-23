@@ -1,0 +1,131 @@
+.overview-contaienr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Todays status style below */
+
+.status-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.todays-status,
+.quick-actions {
+  padding: 20px;
+  height: 250px;
+  width: 48%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.monthly-progress {
+  padding: 20px;
+  margin-top: 20px;
+  height: 200px;
+  width: 97%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.today-text,
+.quick-text,
+.Adherence-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+.Adherence-text-div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+p {
+  margin: 0px;
+}
+
+.daily-medication-set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  height: 60px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.pending {
+  padding: 0px;
+  height: 20px;
+  width: 70px;
+  text-align: center;
+  background-color: brown;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Quick Actions styes below */
+
+.quick-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quick-links > button {
+  background-color: white;
+  border: 1px solid rgb(216, 212, 212);
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quick-links button span {
+  margin-left: 10px;
+}
+
+.ntf {
+  height: 16px;
+  width: 16px;
+}
+
+.progress-bar {
+  margin-top: 10px;
+  width: 90%;
+  height: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #0a0a0a;
+  box-shadow: inset 0 1px 3px rgba(182, 175, 175, 0.2);
+}
+
+.indicator-bar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(148, 142, 142);
+}
+
+@media (width<768px) {
+  .status-actions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .todays-status,
+  .quick-actions {
+    width: 90%;
+  }
+
+  .monthly-progress {
+    width: 90%;
+  }
+}

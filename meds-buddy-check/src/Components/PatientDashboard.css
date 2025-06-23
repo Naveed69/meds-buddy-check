@@ -73,10 +73,6 @@
   border: 1px solid rgb(216, 213, 213);
 }
 
-/* .medication-tracker-patient div {
-  font-size: 24px;
-} */
-
 .calender-container-patient {
   background-color: white;
   padding: 30px;
@@ -87,65 +83,20 @@
 
 /* ---------------- */
 
-.stats-box {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-  padding: 15px;
-  background-color: #f7f9fc;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-
-.stat {
-  text-align: center;
-  flex: 1;
-}
-
-.stat:not(:last-child) {
-  border-right: 1px solid #ddd;
-}
-
-.stat h4 {
-  margin-bottom: 5px;
-  font-size: 16px;
-}
-
-.section {
-  margin-top: 30px;
-}
-
-.section h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  border-left: 4px solid #3f51b5;
-  padding-left: 10px;
-  color: #3f51b5;
-}
-
-.calendar-placeholder {
-  padding: 40px;
-  text-align: center;
-  border: 2px dashed #ccc;
-  color: #aaa;
-  border-radius: 8px;
-  background-color: #fafafa;
-}
-
 .taken-day {
   background-color: #c3f1c3 !important;
   border: none;
-  margin: 2px;
+  margin: 1px;
 }
 
 .missed-day {
   background-color: #f9d2d2 !important;
   border: none;
-  margin: 2px;
+  margin: 1px;
 }
 
 .today-day {
-  border: 2px solid #4a90e2 !important;
+  border: 1px solid #4a90e2 !important;
   border: none;
 }
 
@@ -167,5 +118,8 @@
 
   .calender-container-patient {
     width: 80%;
+  }
+  .navbar {
+    height: 80px;
   }
 }
